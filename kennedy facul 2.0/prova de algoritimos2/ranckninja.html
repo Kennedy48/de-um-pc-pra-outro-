@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova continuada2</title>
+</head>
+
+<body>
+    <div id="caixa">
+        login <input id="login">
+        <br> <br>
+        senha <input id="senha">
+        <br> <br>
+        <select id="combo">
+            <option value=" ">selecione o rank</option>
+            <option value="hokage.jpg">Hokage</option>
+            <option value="jounin.jpg">Jounin</option>
+            <option value="chunin.jpg">chunin</option>
+            <option value="genin.jpg">Genin</option>
+        </select>
+        <button onclick="entra()" id="contar">Entrar</button>
+        <button onclick="limpar()">Limpar</button>
+        <br>
+        <br>
+       
+    
+    <div id="div_resultado"></div>
+ <img id="img_ninja" style="width: 300px;">
+</div>
+</body>
+
+</html>
+<script>
+    var contar = 3;
+    function entra() {
+        if (login.value == 'hokage' && senha.value == 'bandana' && combo.value == 'hokage.jpg') {
+            div_resultado.innerHTML = `<span style="color: blue;">olá ${login.value} você entrou com o perfil hokage</span>`
+            img_ninja.src = 'hokage.jpg'
+            contar = 3;
+        }
+        else if (login.value == 'jounin' && senha.value == 'bandana' && combo.value == 'jounin.jpg'){
+            div_resultado.innerHTML = `<span style="color: blue;">olá ${login.value} você entrou com o perfil jounin</span>`
+        img_ninja.src = 'jounin.jpg'
+        contar = 3;
+    }
+    
+        else if (login.value == 'chunin' && senha.value == 'bandana' && combo.value == 'chunin.jpg') {
+        div_resultado.innerHTML = `<span style="color: blue;">olá ${login.value} você entrou com o perfil chunin </span>`
+        img_ninja.src = 'chunin.jpg'
+        contar = 3;
+    }
+    else if (login.value == 'genin' && senha.value == 'bandana' && combo.value == 'genin.jpg') {
+        div_resultado.innerHTML = `<span style="color: blue;">olá ${login.value} você entrou com o perfil genin </span>`
+        img_ninja.src = 'genin.jpg'
+        contar = 3;
+    }
+    else {
+        contar--;
+        div_resultado.innerHTML = `<span style="color: red;">Você tem mais ${contar} tentativas</span> `
+        img_ninja.src = " ";
+    }
+    if (contar == 0) {
+
+       
+  caixa.innerHTML =  "Acesso bloqueado! Entre em contato com o suporte"
+
+    }
+    }
+    function limpar(){
+        login.value = " "
+        senha.value = " "
+        img_ninja.src   = " "
+        div_resultado.innerHTML = " "
+    }
+</script>

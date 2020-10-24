@@ -1,0 +1,5 @@
+HLD-do projeto é menos detalhada, colocamos a internet fibra da vivo ela vai pro modem que conecta a os dispositivos os despositivos sao os sensores de temperatura os computadores e celuçlares 
+os senseros de temp sao conectados ao fotos bioreatores os computadores e os cells estao cocnetados aos nosso site para facil a acesso 
+LLD- essa é a parte mais tecnicna é a internet fibra otica há uma margem de 500mgs pra nossa empresa pra manter tudo funcionando, o nosso molden wireless d-link 
+os dispositivos do sensor de temperatura Termostato Digital Controle De Temperatura W1209 12v Led, os fotos bireatores sao onde as algas pegam os nutrente
+s necessirios sejam ela a luz  eo diosido de carbono, os graficos são via css,java e html e os graficos via app react(dispoisitivos mais indicados são o até corel e o android 8 pra cima )

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seguro exercises</title>
+</head>
+<body>
+ Infraçoes cometidas<input id="in_infracoes"> <br>
+    Valor do carro<input id="in_carro"> <br>
+    <button onclick="calcular_seguro()">
+        calcular seguro</button>
+<br>
+    <div id="div_resultado"></div>
+
+</body>
+</html>
+<script>
+    function calcular_seguro(){
+    var Infracoes= Number(in_infracoes.value);
+    var carro= Number(in_carro.value);
+    var seguro= carro * 0.015;
+    if (Infracoes < 3) {
+        seguro = seguro * 0.9;
+    }
+div_resultado.innerHTML = `seu seguro ficará em R$${seguro.tofixed(2)}`
+}
+</script>

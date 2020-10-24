@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+.a {
+    text-decoration:none;
+    color: white;
+}
+.navbar {
+    background-color: black;
+    color: white;
+    height: 100px;
+    border-bottom: 8px orangered solid;
+}
+.container{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    
+    
+}
+.navbar h1{
+   
+    float: left;
+    margin-top: 20px;
+    
+}
+.navbar ul{
+    float: right;
+    
+
+}
+.navbar li{
+    float: left;
+    list-style : none;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+.navbar h1 span {
+    color: orangered;
+}
+.current{
+    color: orangered;
+    
+}

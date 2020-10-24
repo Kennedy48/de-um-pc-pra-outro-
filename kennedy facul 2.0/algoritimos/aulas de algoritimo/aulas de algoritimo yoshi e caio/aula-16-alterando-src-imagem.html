@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 16 trocando uma imagem </title>
+</head>
+<body>
+
+    <h3>mudança de tempo</h3>
+    <button onclick="nublado()">mudar para nublado</button>
+    <button onclick="chuvoso()">mudar para chuvoso</button>
+<br>
+
+<img id= "img_clima" src="dia-ensolarado.jpg" style= "height: 200px;"alt="imagem do meu dia" >
+</body>
+</html>
+<script>
+    function nublado() {
+        img_clima.src = "dia-nublado.jpg"
+    }
+    function chuvoso() {
+        img_clima.src = "dia-chuvoso.jpg"
+    }
+</script>

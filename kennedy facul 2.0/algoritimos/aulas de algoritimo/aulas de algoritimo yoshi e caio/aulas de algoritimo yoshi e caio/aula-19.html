@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 19</title>
+</head>
+<body>
+    <h1>Minha primeira calculadora! </h1>
+    primeiro numero: <input  id="in_numero1"> <br>
+    segundo numero: <input  id="in_numero2"> <br>
+
+    <button onclick="subtrair()">subtrair</button><br>
+    <button onclick="multiplicar()">multiplicar</button><br>
+    <button onclick="dividir()">dividir</button><br>
+    <button onclick="elevar()">potencia</button><br>
+    <button onclick="somar()">somar</button>
+    <div id="div_resultado"></div>
+</body>
+</html>
+<script>
+    function subtrair() {
+        var subtracao = in_numero1.value-in_numero2.value;
+        div_resultado.innerHTML = `subtração: ${subtracao}`;
+    }
+    function multiplicar() {
+        var multiplicacao = in_numero1.value * in_numero2.value;
+        div_resultado.innerHTML = `Produto: ${multiplicacao}`;
+    }
+    function dividir() {
+        var divisao = in_numero1.value / in_numero2.value;
+        div_resultado.innerHTML = `Razão: ${divisao}`;
+    }
+    function elevar() {
+        var potencia = in_numero1.value ** in_numero2.value;
+        div_resultado.innerHTML = `Potência: ${potencia}`;
+    }
+    function somar() {
+        var adicao = Number (in_numero1.value)+Number (in_numero2.value);
+        div_resultado.innerHTML = `Soma: ${adicao}`;
+    }
+    
+</script>

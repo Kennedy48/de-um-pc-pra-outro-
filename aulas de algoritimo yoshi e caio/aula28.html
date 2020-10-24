@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula28</title>
+</head>
+<body>
+     <b>  Você já clicou <u id= 'u_cliques'>0</u> vezes </b>
+     <br>
+    <button onclick="contar()">Clica nimim</button>
+    <div id=aumentar"></div>
+    
+
+</body>
+</html>
+<script>
+ var cliques =0;
+    function contar() {
+    
+cliques++;
+    u_cliques.innerHTML = cliques;
+    }
+</script>

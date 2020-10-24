@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 20</title>
+</head>
+<body>
+    <h1><u>Calculo de multa e situacão da CHN</u></h1>
+    Quantos pontos tem sua CNH?
+    <input  id="in_pontos"> <br>
+    <button onclick="verificar()">verificar situacão</button>
+</body>
+</html>
+<script>
+    function verificar() {
+        var pontos= Number (in_pontos.value);
+        if (pontos >= 20) {
+            alert ("sua CNH esta suspensa")
+
+        }
+        var multa = pontos * 100;
+        alert (`valor de sua multa: ${multa}`)
+    }
+</script>

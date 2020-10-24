@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 13</title>
+</head>
+<body>
+    <h3>limpando conteudo de tags</h3>
+    para ser humano
+    temperaturas abaixo de <b id="b_fria">21 graus C </b>são <u id="u_fria">frias</u>
+<br>
+e, acima de <b id="b_quente">24 graus C</b>,são <u id="u_quente">quentes</u>.
+<br>
+<div id="div_conforto"></div>
+entre 21 graus e 24 graus é confortavel.
+<button onclick="esconder()">esconder valores</button>
+</body>
+</html>
+<script>
+    function esconder() {
+        b_fria.innerHTML = ""
+    u_fria.innerHTML = ""
+    b_quente.innerHTML = ""
+    u_quente.innerHTML = ""
+    div_conforto.innerHTML = ""
+    }
+
+</script>

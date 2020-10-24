@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+quatidade de maçãs compradas <input id="in_compradas"> <br>
+<button onclick="finalizar()">finalizar compra</button>   
+</body>
+</html>
+<script>
+    function finalizar() {
+        var macas= Number(in_compradas.value);
+        var preco_das_macas= 0.75;
+        if (macas >=10) {
+            preco_das_macas = 0.68;
+        }
+        var total = macas *  preco_das_macas;
+        alert (`o total a pagar é de ${total.toFixed(2)}`)
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 12</title>
+</head>
+<body>
+    <h3>incrementando (aumentando) conteudo já existente</h3>
+<button onclick="cenoura()">Cenoura</button>
+<button onclick="batata()">Batata</button>
+<button onclick="temperos()">temperos</button>
+<div id="lista_de_compras"><b>Lista de compras</b></div>
+</body>
+</html>
+<script>
+    function cenoura() {
+        lista_de_compras.innerHTML += '<br> *cenoura';
+    }
+    function batata() {
+        lista_de_compras.innerHTML += "<br> batata";
+    }
+    function temperos() {
+        lista_de_compras.innerHTML += "<br> temperos";
+    }
+</script>

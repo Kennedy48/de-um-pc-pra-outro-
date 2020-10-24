@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 14</title>
+</head>
+<body>
+    <h3>esconde e mostra elementos</h3>
+    há segredos aqui! cuidado! <br>
+
+  <button onclick="mostrar_segredos()">ver o segredos</button>
+    <button onclick="esconder_segredos()">esconder o segredos</button>
+    
+    <br>
+    <span id="span_segredos" style="display: none">
+    você é senhor do que cala e escravo do que fala
+    </span>
+</body>
+</html>
+<script>
+    function mostrar_segredos() {
+        span_segredos.style.display ='block';
+    }
+    function esconder_segredos() {
+        span_segredos.style.display = 'none';
+    }
+</script>

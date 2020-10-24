@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual dos 4GTB você torce ?
+    <select  id="in_time">
+    <option value="x">4GTB a selecionar</option>
+    <option value="corinthians.jpg">corinthians</option>
+    <option value="palmeiras.jpg">palmeiras</option>
+    <option value="santos.png">santos</option>
+    <option value="são_paulo.png">são paulo</option>
+</select>
+<br>
+
+<img id="img_escudo" style ="width :500px;">
+<br>
+<br>
+<button onclick="ver_escudo()">Ver escudo</button>
+</body>
+</html>
+<script>
+    function ver_escudo(){
+        img_escudo.src = in_time.value;
+        
+    }
+</script>
+

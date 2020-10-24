@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quantidade de chakara</title>
+</head>
+<body>
+    <h3> Quanto chakra voce tem sendo um jinchuuriki</h3>
+
+    quantidade de chakra da biju: <input id= 'in_biju'><br>
+    quantidade de chakra do ninja: <input id='in_ninja'><br>
+
+<button style="background-color: orange ;" onclick="gerar_poder()">gerar poder</button><br>
+
+<div id='div_shinobi'></div>
+
+
+</body>
+</html>
+<script> 
+function gerar_poder () {
+var shinobi = Number (in_ninja.value )+ Number (in_biju.value) ;
+div_shinobi.innerHTML = `<span style="background-color: red"> com o selamento da sua biju voce tem
+ ${shinobi} de chakra  `;
+}
+</script>

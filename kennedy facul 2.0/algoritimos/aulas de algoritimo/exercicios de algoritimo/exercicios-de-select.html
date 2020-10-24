@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual é a bebida que vai pedir ?
+    <select  id="in_bebida">
+        <option value="0">Nenhuma</option>
+        <option value="3,90">Agua</option>
+        <option value="5,00">Refrigerante</option>
+        <option value="4,00">Cerveja</option>
+    </select>
+ <button onclick="informar()">Dizer o preço</button>  
+ <div id="div_preco"></div>  
+</body>
+</html>
+<script>
+    function informar(){
+         var bebida = in_bebida.value;
+         if (bebida == '0' ){
+             alert ('não vai querer bebida ?');
+         }
+         else {
+             div_preco.innerHTML= `O preço de sua bebida é (0 a 7,80) ${bebida}`
+         }
+    }
+</script>

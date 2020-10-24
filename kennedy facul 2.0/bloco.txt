@@ -1,0 +1,6 @@
+objetivo= criar um prototico de estufa inteligente
+
+planejamento=
+
+por que usar o nosso softwar? 
+alem do nosso softwar atender ao mercado ele tambem atende a necessidade de quantidade e qualidade, otimiza o tempo e mao de obra
